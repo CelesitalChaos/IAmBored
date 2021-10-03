@@ -235,7 +235,7 @@ namespace IAmBored.Forms
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 96);
+            this.ClientSize = new System.Drawing.Size(284, 106);
             this.Controls.Add(this.BTN_View);
             this.Controls.Add(this.GB_Key);
             this.Controls.Add(this.GB_Link);
@@ -248,7 +248,7 @@ namespace IAmBored.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
-            this.MinimumSize = new System.Drawing.Size(300, 0);
+            this.MinimumSize = new System.Drawing.Size(300, 39);
             this.Name = "Main";
             this.Text = "I Am Bored";
             this.Load += new System.EventHandler(this.Main_Load);
