@@ -57,5 +57,17 @@ namespace IAmBored.Forms
         {
             BTN_Randomize.PerformClick();
         }
+
+        private void BTN_View_Click(object sender, EventArgs e)
+        {
+            if (this.Height == 453)
+            {
+                Height = 135;
+            }
+            else
+            {
+                Height = 453;
+            }
+        }
     }
 }

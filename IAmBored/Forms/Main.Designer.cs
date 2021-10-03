@@ -45,6 +45,7 @@ namespace IAmBored.Forms
             this.TB_Link = new System.Windows.Forms.TextBox();
             this.GB_Key = new System.Windows.Forms.GroupBox();
             this.TB_Key = new System.Windows.Forms.TextBox();
+            this.BTN_View = new System.Windows.Forms.Button();
             this.GB_Activity.SuspendLayout();
             this.GB_Accessibility.SuspendLayout();
             this.GB_Type.SuspendLayout();
@@ -70,7 +71,7 @@ namespace IAmBored.Forms
             | System.Windows.Forms.AnchorStyles.Right)));
             this.BTN_Randomize.Location = new System.Drawing.Point(12, 12);
             this.BTN_Randomize.Name = "BTN_Randomize";
-            this.BTN_Randomize.Size = new System.Drawing.Size(260, 36);
+            this.BTN_Randomize.Size = new System.Drawing.Size(229, 36);
             this.BTN_Randomize.TabIndex = 2;
             this.BTN_Randomize.Text = "Generate a random activity";
             this.BTN_Randomize.UseVisualStyleBackColor = true;
@@ -220,11 +221,22 @@ namespace IAmBored.Forms
             this.TB_Key.TabIndex = 1;
             this.TB_Key.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
+            // BTN_View
+            // 
+            this.BTN_View.Location = new System.Drawing.Point(247, 12);
+            this.BTN_View.Name = "BTN_View";
+            this.BTN_View.Size = new System.Drawing.Size(25, 36);
+            this.BTN_View.TabIndex = 9;
+            this.BTN_View.Text = "^^";
+            this.BTN_View.UseVisualStyleBackColor = true;
+            this.BTN_View.Click += new System.EventHandler(this.BTN_View_Click);
+            // 
             // Main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 414);
+            this.ClientSize = new System.Drawing.Size(284, 96);
+            this.Controls.Add(this.BTN_View);
             this.Controls.Add(this.GB_Key);
             this.Controls.Add(this.GB_Link);
             this.Controls.Add(this.GB_Price);
@@ -236,6 +248,7 @@ namespace IAmBored.Forms
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MaximizeBox = false;
+            this.MinimumSize = new System.Drawing.Size(300, 0);
             this.Name = "Main";
             this.Text = "I Am Bored";
             this.Load += new System.EventHandler(this.Main_Load);
@@ -273,6 +286,7 @@ namespace IAmBored.Forms
         private System.Windows.Forms.TextBox TB_Link;
         private System.Windows.Forms.GroupBox GB_Key;
         private System.Windows.Forms.TextBox TB_Key;
+        private System.Windows.Forms.Button BTN_View;
     }
 }
 
