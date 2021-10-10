@@ -16,6 +16,11 @@ namespace IAmBored.Utilities
         /// <returns>The <see cref="bool" />.</returns>
         public static bool CheckForInternetConnection(string url, int timeoutMs = 10000)
         {
+            if (string.IsNullOrEmpty(url))
+            {
+                return false;
+            }
+
             try
             {
                 var request = (HttpWebRequest) WebRequest.Create(url);
