@@ -17,7 +17,7 @@ namespace IAmBored.Utilities
         /// <value>
         ///     The activity.
         /// </value>
-        public string Activity { get; set; }
+        public string Activity { get; private set; }
 
         /// <summary>
         ///     Gets or sets the accessibility.
@@ -25,7 +25,7 @@ namespace IAmBored.Utilities
         /// <value>
         ///     The accessibility.
         /// </value>
-        public string Accessibility { get; set; }
+        public string Accessibility { get; private set; }
 
         /// <summary>
         ///     Gets or sets the type.
@@ -33,7 +33,7 @@ namespace IAmBored.Utilities
         /// <value>
         ///     The type.
         /// </value>
-        public string Type { get; set; }
+        public string Type { get; private set; }
 
         /// <summary>
         ///     Gets or sets the participants.
@@ -41,7 +41,7 @@ namespace IAmBored.Utilities
         /// <value>
         ///     The participants.
         /// </value>
-        public string Participants { get; set; }
+        public string Participants { get; private set; }
 
         /// <summary>
         ///     Gets or sets the price.
@@ -49,7 +49,7 @@ namespace IAmBored.Utilities
         /// <value>
         ///     The price.
         /// </value>
-        public string Price { get; set; }
+        public string Price { get; private set; }
 
         /// <summary>
         ///     Gets or sets the link.
@@ -57,7 +57,7 @@ namespace IAmBored.Utilities
         /// <value>
         ///     The link.
         /// </value>
-        public string Link { get; set; }
+        public string Link { get; private set; }
 
         /// <summary>
         ///     Gets or sets the key.
@@ -65,7 +65,7 @@ namespace IAmBored.Utilities
         /// <value>
         ///     The key.
         /// </value>
-        public string Key { get; set; }
+        public string Key { get; private set; }
 
         /// <summary>
         ///     Loads the module.
@@ -73,7 +73,7 @@ namespace IAmBored.Utilities
         /// <param name="json">The json.</param>
         public void LoadModule(string json)
         {
-            if (json.Length > 0)
+            if (!string.IsNullOrEmpty(json))
             {
                 dynamic module = JsonConvert.DeserializeObject(json);
 
